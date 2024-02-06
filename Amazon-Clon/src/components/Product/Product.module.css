@@ -1,0 +1,56 @@
+.card_container {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+
+.card_container:hover .button {
+  display: block;
+  transition: display 0.3s;
+}
+
+.card_container img {
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.button {
+  display: none;
+  padding: 8px 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--primary-shade);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.products_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin: 0 auto;
+}

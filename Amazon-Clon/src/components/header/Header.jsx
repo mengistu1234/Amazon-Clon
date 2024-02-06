@@ -3,20 +3,20 @@ import { CiSearch } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { BsCart } from "react-icons/bs";
 import LowerHeader from "./LowerHeader";
-import "./Header.css";
+import classes from "./Header.module.css";
 
 function Header() {
   return (
     <section>
-      <div className="header_container">
-        <div className="logo_container">
-          <a href="/">
+      <div className={classes.header_container}>
+        <div className={classes.logo_container}>
+          <a href="#">
             <img
               src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
               alt="amazon-logo"
             />
           </a>
-          <div className="delivery">
+          <div className={classes.delivery}>
             <span>
               <CiLocationOn size={25} />
             </span>
@@ -26,15 +26,15 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="search">
+        <div className={classes.search}>
           <select name="" id="">
             <option value="">All</option>
           </select>
           <input type="text" placeholder="Search Amazon" />
           <CiSearch size={25} />
         </div>
-        <div className="order_container">
-          <a href="" className=" language">
+        <div className={classes.order_container}>
+          <a href="" className={classes. language}>
             <img
               src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png?20151118161041"
               alt="US flag"
@@ -48,11 +48,11 @@ function Header() {
             <p>Hello, Sign In</p>
             <span>Account & Lists</span>
           </a>
-          <a href="">
+          <a href="/">
             <p>Returns</p>
             <span>& Orders</span>
           </a>
-          <a href="/" className="cart">
+          <a href="" className={classes.cart}>
             <BsCart size={25} />
             <span>0</span>
           </a>
