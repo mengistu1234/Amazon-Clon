@@ -1,3 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.fixed{
+  position: sticky;
+  top: 0;
+  z-index:100 ;
+}
 .header_container {
   display: flex;
   align-items: center;
@@ -28,6 +37,7 @@
   font-weight: bold;
   padding: 5px;
   font-family: Arial, sans-serif;
+  cursor: pointer;
 }
 
 .delivery p {
@@ -140,6 +150,7 @@
   display: flex;
   list-style: none; 
   gap: 3px;
+  cursor: pointer;
 }
 .lower_container ul li {
   padding: 8px;

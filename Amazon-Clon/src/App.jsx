@@ -1,19 +1,12 @@
 import React, { useState } from "react"; 
 import "./App.css";
-import Header from "./components/header/Header";
-import Carousel from "./components/Caraousel/Carousel";
-import Catagory from "./components/Catagory/Catagory";
- import Product from "./components/Product/Product";
-
+import Routing from "./Router.jsx";
 function App() {
-  const [count, setCount] = useState(); 
+  const [count, setCount] = useState(0); 
 
   return (
     <>
-      <Header />
-      <Carousel />
-      <Catagory />
-      <Product />
+      <Routing />
     </>
   );
 }
