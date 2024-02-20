@@ -5,7 +5,7 @@ import { DataContext } from "../../components/dataProvider/DataProvider";
 import ProductCard from "../../components/Product/ProductCard";
 import CurrencyFormat from "../../components/CurrencyFormat/CurencyFormat";
 import { Link } from "react-router-dom";
-import { Type } from "../../Utility/Action.type";
+import { Type } from "../../Utility/action.type";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 
@@ -20,7 +20,7 @@ function Cart() {
       item,
     });
   };
-  const decrement = (item) => {
+  const decrement = (id) => {
     dispatch({
       type: Type.REMOVE_FROM_BASKET,
       id,
