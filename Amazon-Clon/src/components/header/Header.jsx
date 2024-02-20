@@ -61,7 +61,7 @@ function Header() {
                   </>
                 ) : (
                   <>
-                    <p> Please ,Sign In ⬇️</p>
+                    <p> Hello, Sign In ⬇️</p>
                     <span>Account & Lists</span>
                   </>
                 )}
